@@ -7,34 +7,43 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:id="@+id/addName"
+        android:layout_width="322sp"
+        android:layout_height="52sp"
+        android:layout_marginTop="72sp"
         android:ems="10"
+        android:hint="@string/edit_text"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="164dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="144dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:layout_width="300sp"
+        android:layout_height="63sp"
+        android:layout_marginTop="140sp"
+        android:background="@color/colorPrimary"
+        android:text="@string/button1"
+        app:layout_constraintEnd_toEndOf="@+id/addName"
+        app:layout_constraintStart_toStartOf="@+id/addName"
+        app:layout_constraintTop_toBottomOf="@+id/addName" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="186dp"
-        android:layout_height="79dp"
-        android:layout_marginBottom="80dp"
-        android:text="TextView"
+        android:id="@+id/seeText"
+        android:layout_width="322sp"
+        android:layout_height="83sp"
+        android:layout_marginBottom="112sp"
+        android:paddingTop="25sp"
+        android:text="@string/text_view"
+        android:textAlignment="center"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
